@@ -13,3 +13,45 @@
     font-style: normal;
     font-display: swap;
 }
+
+body {
+    font-family: "PT Sans", sans-serif;
+    font-size: 22px;
+    line-height: 26px;
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+
+/* Header Styles start */
+.main-header {
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+.navigation-list {
+    padding-left: 0;
+}
+
+.navigation-item {
+    list-style-type: none;
+}
+
+.navigation-link {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.navigation-button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: inherit;
+}
+
+/* Header styles end */
