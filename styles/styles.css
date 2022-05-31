@@ -52,6 +52,123 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     color: inherit;
+    background-color: #756157;
 }
 
 /* Header styles end */
+/* Main styles start */
+.promo-container {
+    background-image: url(/images/jpg/welcome-background-mountains.jpg);
+    background-repeat: no-repeat;
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+.welcome-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.welcome-description {
+    text-align: center;
+}
+
+.advantages {
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.bg-blue {
+    background-color: #82B3D3;
+    color: #FFFFFF;
+}
+
+.advantages-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.advantages-number {
+    text-align: center;
+}
+
+.advantages-description {
+    text-align: center;
+}
+
+.advantages-list {
+    list-style-type: none;
+}
+
+.bg-lightblue {
+    background-color: #83B3D31F;
+    color: #000000;
+}
+
+.cards-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.cards-description {
+    text-align: center;
+}
+
+.bg-lightgray {
+    background-color: #83B3D31F;
+    color: #000000;
+}
+
+.hotel-search-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.hotel-search-description {
+    text-align: center;
+}
+
+.hotel-search-link {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #756157;
+}
+
+.subscription {
+    background-image: url(/images/jpg/subscription-background-valley.jpg);
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    background-color: #FFFFFF;
+    color: #000000;
+
+}
+
+.subscription-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.subscription-description {
+    text-align: center;
+}
+
+/* Main styles end */
