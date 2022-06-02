@@ -81,6 +81,10 @@ body {
     color: #FFFFFF;
 }
 
+.bg-blue>.advantages-description {
+    color: #FFFFFF
+}
+
 .advantages-title {
     font-weight: 700;
     font-size: 24px;
@@ -95,18 +99,7 @@ body {
 
 .advantages-description {
     text-align: center;
-}
-
-.advantages-description:nth-child(3) {
-    color: #333333;
-}
-
-.advantages-description:nth-child(4) {
-    color: #333333;
-}
-
-.advantages-description:nth-child(5) {
-    color: #333333;
+    color: #333333
 }
 
 .advantages-list {
