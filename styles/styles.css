@@ -58,8 +58,7 @@ body {
 /* Header styles end */
 /* Main styles start */
 .promo-container {
-    background-image: url(/images/jpg/welcome-background-mountains.jpg);
-    background-repeat: no-repeat;
+    background: url(/images/jpg/welcome-background-mountains.jpg) no-repeat #FFFFFF;
     color: #000000;
     background-color: #FFFFFF;
 }
