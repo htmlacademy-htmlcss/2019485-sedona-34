@@ -24,13 +24,8 @@ body {
 
 
 /* Header Styles start */
-.main-header {
-    color: #000000;
-    background-color: #FFFFFF;
-}
-
 .navigation-list {
-    padding-left: 0;
+    padding: 0;
 }
 
 .navigation-item {
@@ -59,8 +54,8 @@ body {
 /* Main styles start */
 .promo-container {
     background: url(/images/jpg/welcome-background-mountains.jpg) no-repeat #FFFFFF;
-    color: #000000;
-    background-color: #FFFFFF;
+    background-size: cover;
+    background-color: #000000;
 }
 
 .welcome-title {
@@ -73,6 +68,7 @@ body {
 
 .welcome-description {
     text-align: center;
+    color: #333333;
 }
 
 .advantages {
@@ -101,6 +97,18 @@ body {
     text-align: center;
 }
 
+.advantages-description:nth-child(3) {
+    color: #333333;
+}
+
+.advantages-description:nth-child(4) {
+    color: #333333;
+}
+
+.advantages-description:nth-child(5) {
+    color: #333333;
+}
+
 .advantages-list {
     list-style-type: none;
 }
@@ -120,6 +128,7 @@ body {
 
 .cards-description {
     text-align: center;
+    color: #333333;
 }
 
 .bg-lightgray {
@@ -137,6 +146,7 @@ body {
 
 .hotel-search-description {
     text-align: center;
+    color: #333333;
 }
 
 .hotel-search-link {
@@ -153,9 +163,10 @@ body {
 .subscription {
     background-image: url(/images/jpg/subscription-background-valley.jpg);
     background-repeat: no-repeat;
-    background-size: auto auto;
-    background-color: #FFFFFF;
-    color: #000000;
+    background-size: cover;
+    background-color: #000000;
+    color: #FFFFFF;
+
 
 }
 
