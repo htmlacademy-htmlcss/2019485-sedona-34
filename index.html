@@ -6,6 +6,7 @@
   <meta name="keywords" content="Седона, городок, жилье, гостиницы">
   <meta name="description" content="Городок Седона и его приемущества">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
@@ -23,7 +24,7 @@
           <a class="navigation-link" href="#">О Седоне</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
+          <a class="navigation-link" href="catalog.html">Гостиницы</a>
         </li>
       </ul>
     </nav>
@@ -39,8 +40,8 @@
         </a>
       </div>
       <div class="navigation-item">
-        <a class="navigation-link" href="#">
-          Хочу сюда
+        <a class="navigation-button" href="#">
+          Хочу сюда!
         </a>
       </div>
     </div>
@@ -48,8 +49,10 @@
   <!-- header end -->
   <!-- main start -->
   <main class="main-index">
-    <span class="visually-hidden">Добро пожаловать в Седона</span>
-    <img class="promo-logo" src="images/png/welcome-to-sedona.png" width="458" height="352" alt="Логотип Седона">
+    <div class="promo-container">
+      <span class="visually-hidden">Добро пожаловать в Седона</span>
+      <img class="promo-logo" src="images/png/welcome-to-sedona.png" width="458" height="352" alt="Логотип Седона">
+    </div>
     <section class="welcome">
       <h1 class="welcome-title">Седона — небольшой городок в Аризоне,
         заслуживающий большего!</h1>
@@ -61,10 +64,9 @@
           <h2 class="advantages-title">Настоящий городок</h2>
           <p class="advantages-number">-№1-</p>
           <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-          <img class="advantages-img" src="images/jpg/sedonatown-picture.jpg" width="800" height="384"
-            alt="Фотография городка Седона">
         </li>
-
+        <img class="advantages-img" src="images/jpg/sedonatown-picture.jpg" width="800" height="384"
+          alt="Фотография городка Седона">
         <li class="advantages-cards bg-lightblue">
           <h3 class="cards-title">Жильё</h3>
           <p class="cards-description">Рекомендуем пожить в настоящем мотеле,
@@ -80,9 +82,9 @@
           <p class="cards-description">Не только китайского,
             но и настоящего местного производства!</p>
         </li>
+        <img class="advantages-img" src="/images/jpg/devils-bridge-picture.jpg" width="800" height="384"
+          alt="Фотография Моста Дьявола">
         <li class="advantages-item bg-blue">
-          <img class="advantages-img" src="images/jpg/devils-bridge-picture.jpg" width="800" height="384"
-            alt="Фотография Моста Дьявола">
           <h2 class="advantages-title">Там есть мост дьявола</h2>
           <p class="advantages-number">-№2-</p>
           <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
