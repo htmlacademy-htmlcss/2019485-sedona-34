@@ -185,7 +185,15 @@ body {
     color: #000000;
 }
 
+.hotel-search {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
+    height: 417px;
+}
+
 .hotel-search-title {
+    margin: 0 452px;
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
@@ -194,11 +202,14 @@ body {
 }
 
 .hotel-search-description {
+    margin: 0 304px;
     text-align: center;
     color: #333333;
 }
 
 .hotel-search-link {
+    margin: 0 313px;
+    width: 574px;
     font-weight: 700;
     font-size: 20px;
     line-height: 36px;
@@ -210,6 +221,10 @@ body {
 }
 
 .subscription {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
+    height: 417px;
     background-image: url(/images/jpg/subscription-background-valley.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -220,6 +235,7 @@ body {
 }
 
 .subscription-title {
+    margin: 0 398px;
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
@@ -227,7 +243,12 @@ body {
 }
 
 .subscription-description {
+    margin: 0 363px;
     text-align: center;
+}
+
+.subscription-form {
+    margin: 0 400px;
 }
 
 /* Main styles end */
@@ -237,7 +258,23 @@ body {
     color: inherit;
 }
 
+.footer-contacts {
+    display: flex;
+    width: 1080px;
+    margin: 0 auto;
+    padding: 0;
+    justify-content: space-around;
+}
+
+.socials-list {
+    list-style-type: none;
+    width: 142px;
+    margin-right: 41px;
+}
+
 .contact-phone {
+    width: 331px;
+    margin-right: 41px;
     font-size: 40px;
     line-height: 40px;
     text-align: center;
@@ -245,6 +282,10 @@ body {
     text-decoration: none;
     color: #000000;
     background-color: #FFFFFF;
+}
+
+.academylink {
+    width: 115px;
 }
 
 /* Footer styles end */
