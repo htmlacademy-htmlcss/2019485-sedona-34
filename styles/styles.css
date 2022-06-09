@@ -26,7 +26,6 @@ body {
     font-family: "PT Sans", sans-serif;
     font-size: 22px;
     line-height: 26px;
-    background-color: #FFFFFF;
     color: #000000;
 }
 
@@ -49,17 +48,18 @@ body {
 }
 
 .navigation-logo {
-    display: flex;
-    margin-right: auto;
+    margin: 0 auto 0 47px;
 }
 
 .navigation-list {
+    display: flex;
     width: 470px;
     padding: 0;
     margin: 0;
 }
 
 .navigation-item {
+    padding: 20px 34px 20px 17px;
     list-style-type: none;
 }
 
