@@ -110,6 +110,8 @@ body {
 }
 
 .welcome-title {
+    margin: 63px 290px 31px 290px;
+    width: 620px;
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
@@ -118,6 +120,7 @@ body {
 }
 
 .welcome-description {
+    margin: 31px 273px 90px 273px;
     text-align: center;
     color: #333333;
 }
@@ -138,7 +141,7 @@ body {
     color: #FFFFFF;
 }
 
-.bg-blue>.advantages-description {
+.bg-blue .advantages-description {
     color: #FFFFFF
 }
 
@@ -196,14 +199,14 @@ body {
 }
 
 .hotel-search {
-    display: flex;
-    flex-wrap: wrap;
     width: 1200px;
     height: 417px;
 }
 
 .hotel-search-title {
-    margin: 0 452px;
+    margin: 0 452px 29px 452px;
+    padding-top: 91px;
+    width: 297px;
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
@@ -212,13 +215,15 @@ body {
 }
 
 .hotel-search-description {
-    margin: 0 304px;
+    margin: 0 304px 56px 304px;
+    width: 592px;
     text-align: center;
     color: #333333;
 }
 
 .hotel-search-link {
-    margin: 0 313px;
+    display: block;
+    margin: 0 313px 0 313px;
     width: 574px;
     font-weight: 700;
     font-size: 20px;
@@ -231,21 +236,20 @@ body {
 }
 
 .subscription {
-    display: flex;
-    flex-wrap: wrap;
     width: 1200px;
     height: 417px;
-    background-image: url(/images/jpg/subscription-background-valley.jpg);
-    background-repeat: no-repeat;
+    background: url(../images/jpg/subscription-background-valley.jpg) no-repeat #000000;
     background-size: cover;
-    background-color: #000000;
+
     color: #FFFFFF;
 
 
 }
 
 .subscription-title {
-    margin: 0 398px;
+    width: 404px;
+    margin: 0 398px 29px 398px;
+    padding: 94px 0 0 0;
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
@@ -253,12 +257,14 @@ body {
 }
 
 .subscription-description {
-    margin: 0 363px;
+    width: 475px;
+    margin: 29px 362px 46px 362px;
     text-align: center;
 }
 
 .subscription-form {
-    margin: 0 400px;
+    width: 800px;
+    margin: 46px auto 94px auto;
 }
 
 /* Main styles end */
@@ -270,10 +276,10 @@ body {
 
 .footer-contacts {
     display: flex;
-    width: 1080px;
+    width: 1060px;
     margin: 0 auto;
-    padding: 0;
-    justify-content: space-around;
+    padding: 0 70px;
+    justify-content: space-between;
 }
 
 .socials-list {
@@ -281,6 +287,8 @@ body {
     width: 142px;
     margin-right: 41px;
 }
+
+
 
 .contact-phone {
     width: 331px;
@@ -290,8 +298,6 @@ body {
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
-    color: #000000;
-    background-color: #FFFFFF;
 }
 
 .academylink {
