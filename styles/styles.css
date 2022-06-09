@@ -104,7 +104,7 @@ body {
 }
 
 .promo-container {
-    background: url(./images/jpg/welcome-background-mountains.jpg) no-repeat #FFFFFF;
+    background: url(../images/jpg/welcome-background-mountains.jpg) no-repeat #FFFFFF;
     background-size: cover;
     background-color: #000000;
 }
