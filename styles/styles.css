@@ -115,9 +115,13 @@ body {
     background-color: #000000;
 }
 
+.main-welcome {
+    width: 1200px;
+    height: 282px;
+}
+
 .welcome-title {
-    margin: 63px 290px 31px 290px;
-    width: 620px;
+    padding-top: 63px;
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
@@ -126,7 +130,6 @@ body {
 }
 
 .welcome-description {
-    margin: 31px 273px 90px 273px;
     text-align: center;
     color: #333333;
 }
