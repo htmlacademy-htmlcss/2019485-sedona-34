@@ -292,8 +292,8 @@ body {
 .footer-contacts {
     display: flex;
     width: 1060px;
+    padding: 40px 0 30px 0;
     margin: 0 auto;
-    padding: 0 70px;
     justify-content: space-between;
 }
 
@@ -302,28 +302,26 @@ body {
     justify-content: space-between;
     list-style-type: none;
     width: 142px;
-    margin-right: 41px;
+    padding: 0;
 }
 
 .socials-vk {
     background: url(../images/svg/vk-logo.svg) no-repeat;
-    padding: 0 15px;
+    padding: 12px 15px;
 }
 
 .socials-telegram {
     background: url(../images/svg/telegram-logo.svg) no-repeat;
-    padding: 0 15px;
+    padding: 12px 15px;
 }
 
 .socials-youtube {
     background: url(../images/svg/youtube-logo.svg) no-repeat;
-    padding: 0 15px;
+    padding: 12px 15px;
 }
 
 .contact-phone {
     color: #000000;
-    width: 331px;
-    margin-right: 41px;
     font-size: 40px;
     line-height: 40px;
     text-align: center;
