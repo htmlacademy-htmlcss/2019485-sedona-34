@@ -83,7 +83,7 @@ body {
 
 .navigation-button {
     width: 160px;
-    padding: 9px 15px;
+    padding: 9px 15px 8px 15px;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
@@ -206,13 +206,13 @@ body {
 
 .hotel-search {
     width: 1200px;
-    height: 417px;
+    max-height: 417px;
+    padding: 90px 0;
 }
 
 .hotel-search-title {
-    margin: 0 auto 29px;
-    padding-top: 91px;
     width: 297px;
+    margin: 0 auto 30px;
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
@@ -247,7 +247,6 @@ body {
     height: 417px;
     background: url(../images/jpg/subscription-background-valley.jpg) no-repeat #000000;
     background-size: cover;
-    padding-top: 94px;
     color: #FFFFFF;
 
 
