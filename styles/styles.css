@@ -211,7 +211,6 @@ body {
 }
 
 .hotel-search-title {
-    width: 297px;
     margin: 0 auto 30px;
     font-weight: 700;
     font-size: 30px;
@@ -222,7 +221,6 @@ body {
 
 .hotel-search-description {
     margin: 0 auto 56px;
-    width: 592px;
     text-align: center;
     color: #333333;
 }
@@ -244,7 +242,7 @@ body {
 
 .subscription {
     width: 1200px;
-    height: 417px;
+    padding: 94px 0;
     background: url(../images/jpg/subscription-background-valley.jpg) no-repeat #000000;
     background-size: cover;
     color: #FFFFFF;
@@ -253,23 +251,22 @@ body {
 }
 
 .subscription-title {
-    width: 404px;
-    margin: 0 auto;
+    margin: 0 auto 29px;
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .subscription-description {
     width: 475px;
-    margin: 0 auto;
+    margin: 0 auto 46px;
     text-align: center;
 }
 
 .subscription-button {
     width: 200px;
-    height: 60px;
     padding: 12px 15px;
     background-color: #82B3D3;
     color: #FFFFFF;
@@ -278,13 +275,20 @@ body {
     border: none;
 }
 
+.subscription-form {
+    display: flex;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.subscription-input {
+    width: 600px;
+    height: 60px;
+}
+
 /* Main styles end */
 
 /* Footer styles start */
-.main-footer a {
-    color: inherit;
-}
-
 .footer-contacts {
     display: flex;
     width: 1060px;
@@ -317,6 +321,7 @@ body {
 }
 
 .contact-phone {
+    color: #000000;
     width: 331px;
     margin-right: 41px;
     font-size: 40px;
