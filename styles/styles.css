@@ -204,7 +204,7 @@ body {
 }
 
 .hotel-search-title {
-    margin: 0 452px 29px 452px;
+    margin: 0 auto 29px;
     padding-top: 91px;
     width: 297px;
     font-weight: 700;
@@ -215,7 +215,7 @@ body {
 }
 
 .hotel-search-description {
-    margin: 0 304px 56px 304px;
+    margin: 0 auto 56px;
     width: 592px;
     text-align: center;
     color: #333333;
@@ -223,7 +223,8 @@ body {
 
 .hotel-search-link {
     display: block;
-    margin: 0 313px 0 313px;
+    margin: 0 auto;
+    padding: 12px 15px;
     width: 574px;
     font-weight: 700;
     font-size: 20px;
@@ -240,7 +241,7 @@ body {
     height: 417px;
     background: url(../images/jpg/subscription-background-valley.jpg) no-repeat #000000;
     background-size: cover;
-
+    padding-top: 94px;
     color: #FFFFFF;
 
 
@@ -248,8 +249,7 @@ body {
 
 .subscription-title {
     width: 404px;
-    margin: 0 398px 29px 398px;
-    padding: 94px 0 0 0;
+    margin: 0 auto;
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
@@ -258,13 +258,19 @@ body {
 
 .subscription-description {
     width: 475px;
-    margin: 29px 362px 46px 362px;
+    margin: 0 auto;
     text-align: center;
 }
 
-.subscription-form {
-    width: 800px;
-    margin: 46px auto 94px auto;
+.subscription-button {
+    width: 200px;
+    height: 60px;
+    padding: 12px 15px;
+    background-color: #82B3D3;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
 }
 
 /* Main styles end */
@@ -283,12 +289,27 @@ body {
 }
 
 .socials-list {
+    display: flex;
+    justify-content: space-between;
     list-style-type: none;
     width: 142px;
     margin-right: 41px;
 }
 
+.socials-vk {
+    background: url(../images/svg/vk-logo.svg) no-repeat;
+    padding: 0 15px;
+}
 
+.socials-telegram {
+    background: url(../images/svg/telegram-logo.svg) no-repeat;
+    padding: 0 15px;
+}
+
+.socials-youtube {
+    background: url(../images/svg/youtube-logo.svg) no-repeat;
+    padding: 0 15px;
+}
 
 .contact-phone {
     width: 331px;
