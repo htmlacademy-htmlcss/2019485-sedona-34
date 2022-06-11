@@ -109,6 +109,9 @@ body {
 .promo-logo {
     display: block;
     margin: 0 auto;
+    padding: 52px;
+    padding-bottom: 82px;
+
 }
 
 .promo-container {
@@ -162,6 +165,12 @@ body {
     line-height: 28px;
     text-align: center;
     text-transform: uppercase;
+}
+
+.advantages-item {
+    width: 230px;
+    height: 200px;
+    padding: 92px 85px;
 }
 
 .advantages-number {
@@ -309,6 +318,7 @@ body {
     list-style-type: none;
     width: 142px;
     padding: 0;
+    margin: 0;
 }
 
 .socials-vk {
