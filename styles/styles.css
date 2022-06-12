@@ -355,3 +355,121 @@ body {
 }
 
 /* Footer styles end */
+
+/* Catalog styles */
+.filter-container {
+    display: flex;
+    flex-wrap: wrap;
+    background: url(../images/jpg/welcome-background-mountains.jpg) no-repeat;
+}
+
+.inner-header-title {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 78px;
+    color: #FFFFFF;
+}
+
+.filter-hotels {
+    width: 1200px;
+}
+
+.breadcrumbs-list {
+    color: #FFFFFF;
+}
+
+.catalog-filter-title {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.control {
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.hotel-catalog {
+    display: flex;
+}
+
+.hotel-total {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.cheap {
+    color: #333333;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.expensive {
+    color: #333333;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.popular {
+    color: #333333;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.hotel-card-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-decoration: none;
+}
+
+.hotel-card-description {
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+}
+
+.hotel-rate {
+    color: #333333;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.pagintaion-disabled {
+    background-color: #F2F2F2;
+}
+
+.pagination-link {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    color: #FFFFFF;
+    background-color: #82B3D3;
+}
+
+.catalog-view {
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+}
+
+.small {
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+}
+
+.medium {
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+}
+
+.all {
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+}
