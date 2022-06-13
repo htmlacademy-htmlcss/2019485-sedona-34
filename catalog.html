@@ -67,7 +67,7 @@
                     <section class="filter-hotels">
                         <h2 class="visually-hidden">Фильтр поиска гостиниц</h2>
                         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-                            <fieldset class="catalog-filter-group">
+                            <fieldset class="catalog-filter-group-infrastructure">
                                 <legend class="catalog-filter-title">Инфраструктура:</legend>
                                 <ul class="catalog-filter-list">
                                     <li>
@@ -90,7 +90,7 @@
                                     </li>
                                 </ul>
                             </fieldset>
-                            <fieldset class="catalog-filter-group">
+                            <fieldset class="catalog-filter-group-type">
                                 <legend class="catalog-filter-title">Тип Жилья:</legend>
                                 <ul class="catalog-filter-list">
                                     <li>
@@ -116,31 +116,33 @@
                                     </li>
                                 </ul>
                             </fieldset>
-                            <fieldset class="catalog-filter-group">
+                            <fieldset class="catalog-filter-group-price">
                                 <legend class="catalog-filter-title">Стоимость, ₽:</legend>
                             </fieldset>
-                            <button class="button" type="submit">Применить</button>
-                            <button class="button" type="reset">Сбросить</button>
+                            <button class="button-submit" type="submit">Применить</button>
+                            <button class="button-reset" type="reset">Сбросить</button>
                         </form>
                     </section>
                 </div>
                 <section class="hotel-catalog">
-                    <h2 class="visually-hidden">Список гостиниц</h2>
-                    <h2 class="hotel-total">Найдено гостиниц: 38</h2>
-                    <select class="select-control" aria-label="Сортировка">
-                        <option value="cheap">Сначала дешевое</option>
-                        <option value="expensive">Сначала дорогое</option>
-                        <option value="popular">Сначала популярное</option>
-                    </select>
-                    <a class="button" href="#">
-                        <span class="visually-hidden">Показать карточки</span>
-                    </a>
-                    <a class="button button-light" href="#">
-                        <span class="visually-hidden">Широкое отображение</span>
-                    </a>
-                    <a class="button button-light" href="#">
-                        <span class="visually-hidden">Показать список</span>
-                    </a>
+                    <div class="hotel-title-block">
+                        <h2 class="visually-hidden">Список гостиниц</h2>
+                        <h2 class="hotel-total">Найдено гостиниц: 38</h2>
+                        <select class="select-control" aria-label="Сортировка">
+                            <option value="cheap">Сначала дешевое</option>
+                            <option value="expensive">Сначала дорогое</option>
+                            <option value="popular">Сначала популярное</option>
+                        </select>
+                        <a class="button-table href=" #">
+                            <span class="visually-hidden">Показать карточки</span>
+                        </a>
+                        <a class="button-wide" href="#">
+                            <span class="visually-hidden">Широкое отображение</span>
+                        </a>
+                        <a class="button-list" href="#">
+                            <span class="visually-hidden">Показать список</span>
+                        </a>
+                    </div>
                     <ul class="hotel-list">
                         <li>
                             <a class="hotel-card-link" href="#">
@@ -203,45 +205,46 @@
                             </div>
                         </li>
                     </ul>
-                    <ul class="pagination">
-                        <li class="pagination-item">
-                            <a class="pagination-link pagination-disabled" href="#">1</a>
-                        </li>
-                        <li class="pagination-item">
-                            <a class="pagination-link" href="#">2</a>
-                        </li>
-                        <li class="pagination-item">
-                            <a class="pagination-link" href="#">3</a>
-                        </li>
-                        <li class="pagination-item">
-                            <a class="pagination-link" href="#">4</a>
-                        </li>
-                        <li class="pagination-item">
-                            <button class="button pagination-more" type="button">...</button>
-                        </li>
-                        <li class="pagination-item">
-                            <a class="pagination-link" href="#">10</a>
-                        </li>
-                    </ul>
-                    <p class="catalog-view">Гостиниц на странице</p>
-                    <select class="select-control" aria-label="Количество гостиниц на странице">
-                        <option value="small">4</option>
-                        <option value="medium">8</option>
-                        <option value="all">Все</option>
-                    </select>
+                    <div class="pagination-container">
+                        <ul class="pagination">
+                            <li class="pagination-item">
+                                <a class="pagination-disabled" href="#">1</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a class="pagination-link" href="#">2</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a class="pagination-link" href="#">3</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a class="pagination-link" href="#">4</a>
+                            </li>
+                            <li class="pagination-item">
+                                <button class="button pagination-more" type="button">...</button>
+                            </li>
+                            <li class="pagination-item">
+                                <a class="pagination-link" href="#">10</a>
+                            </li>
+                        </ul>
+                        <p class="catalog-view">Гостиниц на странице:</p>
+                        <select class="select-pagination" aria-label="Количество гостиниц на странице">
+                            <option value="small">4</option>
+                            <option value="medium">8</option>
+                            <option value="all">Все</option>
+                        </select>
+                    </div>
                 </section>
 
                 <section class="subscription">
-                    <h2 class="visually-hidden">Подписка на рассылку</h2>
-                    <b class="subscription-title">Подпишитесь на рассылку</b>
+                    <span class="visually-hidden">Подписка на рассылку</span>
+                    <h2 class="subscription-title">Подпишитесь на рассылку</h2>
                     <p class="subscription-description">Только полезная информация и никакого спама, честное
-                        бойскаутское!
-                    </p>
+                        бойскаутское!</p>
                     <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-                        <label for="email-subscription">Email</label>
+                        <label class="visually-hidden" for="email-subscription">Email</label>
                         <input class="subscription-input" type="email" name="email-subscription" id="email-subscription"
                             placeholder="Ваш e-mail">
-                        <button class="subscription-button" type="button">Подписаться</button>
+                        <button class="subscription-button" type="submit">Подписаться</button>
                     </form>
                 </section>
             </div>
