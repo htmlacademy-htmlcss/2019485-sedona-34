@@ -153,12 +153,6 @@ body {
     line-height: 21px;
 }
 
-.advantages-item {
-    width: 400px;
-    height: 384px;
-}
-
-
 .bg-blue {
     background-color: #82B3D3;
     color: #FFFFFF;
@@ -178,8 +172,10 @@ body {
 
 .advantages-item {
     width: 230px;
-    height: 200px;
-    padding: 92px 85px;
+    padding: 0 85px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .advantages-number {
@@ -453,6 +449,7 @@ body {
 
 .breadcrumbs-link {
     margin: 0 25px 0 0;
+    text-decoration: none;
 }
 
 .catalog-filter-title {
@@ -627,4 +624,9 @@ body {
     font-size: 18px;
     line-height: 21px;
     color: #333333;
+}
+
+.subscription-catalog {
+    width: 1200px;
+    padding: 94px 0;
 }
