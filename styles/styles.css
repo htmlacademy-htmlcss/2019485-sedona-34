@@ -26,7 +26,8 @@ body {
 }
 
 .main-index-container {
-    margin: 0;
+    width: 1200px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     min-height: 100%;
@@ -118,15 +119,13 @@ body {
 .promo-logo {
     display: block;
     margin: 0 auto;
-    padding: 52px;
-    padding-bottom: 82px;
-
 }
 
 .promo-container {
     background: url(../images/jpg/welcome-background-mountains.jpg) no-repeat #FFFFFF;
     background-size: cover;
     background-color: #000000;
+    padding: 52px 0 82px 0;
 }
 
 .main-welcome {
