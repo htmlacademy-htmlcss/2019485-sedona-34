@@ -298,7 +298,7 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     border: none;
-    border-radius: 0px 10px 10px 0px;
+    border-radius: 0 10px 10px 0;
 }
 
 .subscription-form {
@@ -372,46 +372,44 @@ body {
 /* Footer styles end */
 
 /* Catalog styles */
-.inner-header {
-    padding: 0 0 0 70px;
+.filter-header {
+    margin: 0 0 40px 0;
 }
 
-.inner-header-title {
+.filter-header-title {
     margin-top: 0;
     margin-bottom: 10px;
-}
-
-.filter-container {
-    display: flex;
-    flex-wrap: wrap;
-    height: 403px;
-    background: url(../images/jpg/welcome-background-mountains.jpg) no-repeat;
-}
-
-.inner-header-title {
     font-weight: 700;
     font-size: 60px;
     line-height: 78px;
     color: #FFFFFF;
 }
 
+.filter-container {
+    height: 403px;
+    background: url(../images/jpg/welcome-background-mountains.jpg) no-repeat;
+    padding: 35px 70px 70px 70px;
+}
+
 .catalog-filter {
     display: flex;
-    padding: 0 70px;
 }
 
 .catalog-filter-group-infrastructure {
     margin: 0 70px 0 0;
+    padding: 0;
     border: 0;
 }
 
 .catalog-filter-group-type {
     margin: 0 175px 0 0;
+    padding: 0;
     border: 0;
 }
 
 .catalog-filter-group-price {
     margin: 0 70px 0 0;
+    padding: 0;
     border: 0;
 }
 
