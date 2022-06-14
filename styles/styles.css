@@ -19,14 +19,17 @@ html {
 }
 
 body {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
     font-family: "PT Sans", sans-serif;
     font-size: 22px;
     line-height: 26px;
     color: #000000;
+}
+
+.main-index-container {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 
 .visually-hidden {
@@ -59,13 +62,13 @@ body {
 }
 
 .navigation-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
     display: flex;
     width: 470px;
 }
 
-.navigation-item {
-    list-style-type: none;
-}
 
 .navigation-user {
     width: 263px;
