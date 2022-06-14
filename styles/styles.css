@@ -19,6 +19,7 @@ html {
 }
 
 body {
+    margin: 0;
     font-family: "PT Sans", sans-serif;
     font-size: 22px;
     line-height: 26px;
@@ -138,12 +139,14 @@ body {
 }
 
 .main-welcome {
+    padding: 63px 0 90px 0;
+    box-sizing: border-box;
     width: 1200px;
     height: 282px;
 }
 
 .welcome-title {
-    padding-top: 63px;
+    margin: 0 0 31px 0;
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
@@ -152,6 +155,7 @@ body {
 }
 
 .welcome-description {
+    margin: 0;
     text-align: center;
     color: #333333;
 }
