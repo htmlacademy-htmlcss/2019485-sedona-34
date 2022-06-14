@@ -171,11 +171,13 @@ body {
 }
 
 .advantages-item {
-    width: 230px;
+    width: 400px;
+    height: 384px;
     padding: 0 85px;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    box-sizing: border-box;
 }
 
 .advantages-number {
