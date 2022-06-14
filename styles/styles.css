@@ -47,19 +47,13 @@ body {
 /* Header Styles start */
 .main-header {
     display: flex;
-    width: 1200px;
-    margin: 0 auto;
+    padding: 0 70px 0 70px;
 }
 
 .navigation {
     display: flex;
     justify-content: space-between;
     width: 1000px;
-    height: 65px;
-}
-
-.navigation-logo {
-    margin: 0 30px 0 70px;
 }
 
 .navigation-list {
@@ -73,8 +67,7 @@ body {
 
 
 .navigation-user {
-    width: 263px;
-    margin-left: auto;
+    justify-content: flex-end;
 }
 
 .navigation-link {
@@ -84,6 +77,21 @@ body {
     line-height: 26px;
     text-decoration: none;
     color: inherit;
+}
+
+.navigation-search {
+    width: 42px;
+    height: 66px;
+    display: block;
+    background: url(../images/svg/search.svg) no-repeat center;
+}
+
+.navigation-favorite {
+    width: 42px;
+    height: 66px;
+    display: block;
+    margin: 0 20px 0 0;
+    background: url(../images/svg/favorite.svg) no-repeat center;
 }
 
 .navigation-button {
