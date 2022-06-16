@@ -348,27 +348,25 @@ body {
     margin: 0;
 }
 
-.socials-vk {
-    background: url(../images/svg/vk-logo.svg) no-repeat center;
+.socials-icon {
     padding: 12px 15px;
     display: block;
     width: 47px;
+    box-sizing: border-box;
+}
+
+.socials-vk {
+    background: url(../images/svg/vk-logo.svg) no-repeat center;
 
 }
 
 .socials-telegram {
     background: url(../images/svg/telegram-logo.svg) no-repeat center;
-    padding: 12px 15px;
-    display: block;
-    width: 47px;
 
 }
 
 .socials-youtube {
     background: url(../images/svg/youtube-logo.svg) no-repeat center;
-    padding: 12px 15px;
-    display: block;
-    width: 47px;
 }
 
 .contact-phone {
