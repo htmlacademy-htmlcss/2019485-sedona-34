@@ -123,6 +123,9 @@ body {
 .catalog-container {
     width: 1200px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 
 .promo-logo {
