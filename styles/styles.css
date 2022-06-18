@@ -304,9 +304,8 @@ body {
 }
 
 .subscription-description {
-    width: 475px;
-    margin: 0 auto 46px;
     text-align: center;
+    margin: 0 0 46px;
 }
 
 .subscription-button {
