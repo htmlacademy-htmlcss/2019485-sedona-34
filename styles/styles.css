@@ -540,6 +540,7 @@ body {
     grid-template-columns: repeat(3, 340px);
     gap: 0 18px;
     margin: 0 0 96px 0;
+    padding: 0 71px 0 73px;
     list-style-type: none;
 }
 
@@ -627,6 +628,18 @@ body {
     margin: 0;
     grid-column: 2 / 3;
     grid-row: 6 / 7;
+}
+
+.hotel-stars-4 {
+    background: url(../images/catalog/svg/stars4.svg) no-repeat center;
+}
+
+.hotel-stars-3 {
+    background: url(../images/catalog/svg/stars3.svg) no-repeat center;
+}
+
+.hotel-stars-2 {
+    background: url(../images/catalog/svg/stars2.svg) no-repeat center;
 }
 
 .hotel-rate {
