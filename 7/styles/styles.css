@@ -405,6 +405,7 @@ body {
     height: 403px;
     background: url(../images/jpg/welcome-background-mountains.jpg) no-repeat;
     padding: 35px 70px 70px 70px;
+    box-sizing: border-box;
 }
 
 .catalog-filter {
@@ -451,7 +452,6 @@ body {
 
 .filter-hotels {
     display: flex;
-    width: 1200px;
 }
 
 .breadcrumbs-list {
