@@ -171,9 +171,12 @@ body {
 }
 
 .promo-container {
-    background: url(../images/jpg/welcome-background-mountains.jpg) no-repeat #FFFFFF;
-    background-size: cover;
+    background: url(../images/svg/divider.svg), url(../images/jpg/welcome-background-mountains.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100% auto, cover;
+    background-position: bottom, top;
     background-color: #000000;
+    color: #FFFFFF;
     padding: 52px 0 82px 0;
 }
 
