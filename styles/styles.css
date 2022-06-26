@@ -71,12 +71,17 @@ body {
 }
 
 .navigation-link {
-    padding: 20px 17px;
+    padding: 20px 17px 23px;
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
     text-decoration: none;
     color: inherit;
+}
+
+.link-active {
+    border-bottom: 2px solid #756257;
+    position: relative;
 }
 
 .navigation-search {
@@ -87,11 +92,30 @@ body {
 }
 
 .navigation-favorite {
+    position: relative;
     width: 42px;
     height: 66px;
     display: block;
     margin: 0 20px 0 0;
     background: url(../images/svg/favorite.svg) no-repeat center;
+}
+
+.favorite-sum {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 2px;
+    top: 15px;
+    color: #fff;
+    background: #7DB54F;
+    border-radius: 10px;
+    left: 24px;
+    box-sizing: border-box;
+    z-index: 1;
+    text-align: center;
+    padding: 3px 0 4px;
+    font-size: 10px;
+    line-height: 13px;
 }
 
 .navigation-button {
@@ -107,6 +131,19 @@ body {
     background-color: #756157;
     color: #FFFFFF;
     border-radius: 4px;
+}
+
+.navigation-button:hover {
+    background: #615048;
+}
+
+.navigation-button:focus {
+    background: #615048;
+}
+
+.navigation-button:active {
+    background: #756157;
+    color: rgba(255, 255, 255, 0.3);
 }
 
 /* Header styles end */
@@ -313,6 +350,20 @@ body {
     border-radius: 4px;
 }
 
+.hotel-search-link:hover {
+    background: #615048;
+}
+
+.hotel-search-link:focus {
+    background: #615048;
+}
+
+.hotel-search-link:active {
+    background: #756157;
+    color: rgba(255, 255, 255, 0.3);
+
+}
+
 .subscription {
     width: 1200px;
     padding: 94px 0;
@@ -346,6 +397,23 @@ body {
     text-decoration: none;
     border: none;
     border-radius: 0 10px 10px 0;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+}
+
+.subscription-button:hover {
+    background: #68A2CA;
+}
+
+.subscription-button:focus {
+    background: #68A2CA;
+}
+
+.subscription-button:active {
+    background: #82B3D3;
+    color: rgba(255, 255, 255, 0.3);
+
 }
 
 .subscription-form {
@@ -390,6 +458,22 @@ body {
     box-sizing: border-box;
 }
 
+.socials-status {
+    fill: #83B3D3;
+}
+
+.socials-status:hover {
+    fill: #68A2CA;
+}
+
+.socials-status:focus {
+    fill: #68A2CA;
+}
+
+.socials-status:active {
+    fill: rgba(104, 162, 202, 0.3);
+}
+
 .socials-vk {
     position: absolute;
     top: 0;
@@ -426,9 +510,44 @@ body {
     text-decoration: none;
 }
 
+.contact-phone:hover {
+    color: #756157;
+}
+
+.contact-phone:focus {
+    color: #756157;
+}
+
+.contact-phone:active {
+    color: rgba(117, 97, 87, 0.3);
+}
+
 .academylink {
+    position: relative;
     align-self: center;
     width: 115px;
+}
+
+.html-academy-link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    fill: #000000;
+}
+
+.html-academy-link:hover {
+    fill: #756157;
+}
+
+.html-academy-link:focus {
+    fill: #756157;
+}
+
+.html-academy-link:active {
+    fill: rgba(117, 97, 87, 0.3);
 }
 
 /* Footer styles end */
