@@ -309,6 +309,7 @@ body {
 .cards-description {
     text-align: center;
     color: #333333;
+    margin: 0;
 }
 
 .bg-lightgray {
@@ -351,6 +352,7 @@ body {
     color: #FFFFFF;
     background-color: #756157;
     border-radius: 4px;
+    box-sizing: border-box;
 }
 
 .hotel-search-link:hover {
