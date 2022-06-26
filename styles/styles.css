@@ -622,6 +622,10 @@ body {
     display: flex;
 }
 
+.bc-arrow-wrapper {
+    position: relative;
+}
+
 .breadcrumbs-list {
     display: flex;
     list-style-type: none;
@@ -633,6 +637,32 @@ body {
 .breadcrumbs-link {
     margin: 0 25px 0 0;
     text-decoration: none;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.breadcrumbs-home {
+    fill: #FFFFFF;
+}
+
+.breadcrumbs-home:hover {
+    fill: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-home:focus {
+    fill: #FFFFFF;
+}
+
+.breadcrumbs-home:hover {
+    fill: rgba(255, 255, 255, 0.3);
+    ;
+}
+
+.breadcrumbs-arrow {
+    position: absolute;
+    fill: #FFF;
+    right: 10px;
+    top: -15px;
 }
 
 .catalog-filter-title {
@@ -813,11 +843,11 @@ body {
     background: #615048;
 }
 
-.hotel-card-link-button:hover {
+.hotel-card-link-button:focus {
     background: #615048;
 }
 
-.hotel-card-link-button:hover {
+.hotel-card-link-button:active {
     background: #756157;
     color: rgba(255, 255, 255, 0.3);
 }
