@@ -221,12 +221,40 @@ body {
 .advantages-cards {
     width: 400px;
     height: 384px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 85px;
+    box-sizing: border-box;
+    justify-content: center;
 }
 
 .bg-lightblue {
-    background-color: rgba(131, 179, 211, 0.2);
-    ;
+    background: rgba(131, 179, 211, 0.12);
     color: #000000;
+}
+
+.card-icon-house {
+    width: 75px;
+    height: 72px;
+    margin: 0 0 30px 0;
+    background: url(../images/svg/house-icon.svg) no-repeat;
+    align-self: center;
+}
+
+.card-icon-food {
+    width: 74px;
+    height: 70px;
+    margin: 0 0 30px 0;
+    background: url(../images/svg/food.svg) no-repeat;
+    align-self: center;
+}
+
+.card-icon-souvenir {
+    width: 64px;
+    height: 76px;
+    margin: 0 0 30px 0;
+    background: url(../images/svg/souvenir.svg) no-repeat;
+    align-self: center;
 }
 
 .cards-title {
@@ -235,6 +263,7 @@ body {
     line-height: 28px;
     text-align: center;
     text-transform: uppercase;
+    margin: 0 0 30px 0;
 }
 
 .cards-description {
@@ -350,6 +379,10 @@ body {
     margin: 0;
 }
 
+.socials-item {
+    position: relative;
+}
+
 .socials-icon {
     padding: 12px 15px;
     display: block;
@@ -358,17 +391,30 @@ body {
 }
 
 .socials-vk {
-    background: url(../images/svg/vk-logo.svg) no-repeat center;
-
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
 }
 
 .socials-telegram {
-    background: url(../images/svg/telegram-logo.svg) no-repeat center;
-
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
 }
 
 .socials-youtube {
-    background: url(../images/svg/youtube-logo.svg) no-repeat center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
 }
 
 .contact-phone {
