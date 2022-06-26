@@ -272,7 +272,7 @@ body {
 }
 
 .bg-lightgray {
-    background-color: #83B3D31F;
+    background: rgba(131, 179, 211, 0.2);
     color: #000000;
 }
 
