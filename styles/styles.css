@@ -57,6 +57,11 @@ body {
     width: 1000px;
 }
 
+.navigation-logo {
+    z-index: 1;
+    margin: 0 30px -10px 0;
+}
+
 .navigation-list {
     margin: 0;
     padding: 0;
@@ -71,7 +76,7 @@ body {
 }
 
 .navigation-link {
-    padding: 20px 17px 23px;
+    padding: 20px 17px 19px;
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
@@ -273,28 +278,24 @@ body {
     color: #000000;
 }
 
-.card-icon-house {
+.card-icon {
     width: 75px;
-    height: 72px;
+    height: 75px;
     margin: 0 0 30px 0;
-    background: url(../images/svg/house-icon.svg) no-repeat;
     align-self: center;
+}
+
+.card-icon-house {
+    background: url(../images/svg/house-icon.svg) no-repeat;
 }
 
 .card-icon-food {
-    width: 74px;
-    height: 70px;
-    margin: 0 0 30px 0;
     background: url(../images/svg/food.svg) no-repeat;
-    align-self: center;
+
 }
 
 .card-icon-souvenir {
-    width: 64px;
-    height: 76px;
-    margin: 0 0 30px 0;
     background: url(../images/svg/souvenir.svg) no-repeat;
-    align-self: center;
 }
 
 .cards-title {
@@ -574,7 +575,7 @@ body {
 
 .filter-container {
     height: 403px;
-    background: url(../images/jpg/welcome-background-mountains.jpg) no-repeat;
+    background: url(../images/catalog/png/mountain-bg.png) no-repeat;
     padding: 35px 70px 70px 70px;
     box-sizing: border-box;
 }
@@ -902,21 +903,22 @@ body {
 
 
 .hotel-stars {
+    display: flex;
+    align-items: center;
     margin: 0;
     grid-column: 2 / 3;
     grid-row: 6 / 7;
 }
 
-.hotel-stars-4 {
-    background: url(../images/catalog/svg/stars4.svg) no-repeat center;
+.hotel-stars-item {
+    background: url(../images/catalog/svg/star.svg) no-repeat;
+    width: 18px;
+    height: 17px;
+    margin: 0 6px 0 0;
 }
 
-.hotel-stars-3 {
-    background: url(../images/catalog/svg/stars3.svg) no-repeat center;
-}
-
-.hotel-stars-2 {
-    background: url(../images/catalog/svg/stars2.svg) no-repeat center;
+.hotel-stars-item:last-child {
+    margin: 0;
 }
 
 .hotel-rate {
@@ -1028,8 +1030,11 @@ body {
 
 .select-pagination {
     width: 160px;
-    border: 0;
-    background-color: #E5E5E5;
+    background-color: #FFF;
+    border: 2px solid #E5E5E5;
+    border-radius: 4px;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .small {
