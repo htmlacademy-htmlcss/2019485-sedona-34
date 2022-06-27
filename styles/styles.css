@@ -602,11 +602,23 @@ body {
     border: 0;
 }
 
+.filter-button-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
 .button-submit {
     height: 48px;
     border: 0;
     background-color: #82B3D3;
     color: #FFFFFF;
+    border-radius: 4px;
+    width: 160px;
+    padding: 14px 15px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
 }
 
 .button-reset {
@@ -614,6 +626,12 @@ body {
     border: 0;
     background-color: transparent;
     color: #FFFFFF;
+    border-radius: 4px;
+    width: 160px;
+    padding: 14px 15px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
 }
 
 .catalog-filter-list {
