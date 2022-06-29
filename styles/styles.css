@@ -432,6 +432,11 @@ body {
 .subscription-input {
     width: 600px;
     height: 60px;
+    padding: 20px 22px 19px 22px;
+    box-sizing: border-box;
+    background: #F2F2F2;
+    border-radius: 10px 0px 0px 10px;
+    border: 0;
 }
 
 /* Main styles end */
