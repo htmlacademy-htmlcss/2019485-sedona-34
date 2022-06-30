@@ -84,9 +84,30 @@ body {
     color: inherit;
 }
 
-.link-active {
-    border-bottom: 2px solid #756257;
+.link-active-index {
     position: relative;
+}
+
+.link-active-index:before {
+    content: "";
+    position: absolute;
+    width: 68px;
+    background-color: #756257;
+    height: 2px;
+    bottom: -2px;
+}
+
+.link-active-catalog {
+    position: relative;
+}
+
+.link-active-catalog:before {
+    content: "";
+    position: absolute;
+    width: 93px;
+    background-color: #756257;
+    height: 2px;
+    bottom: -2px;
 }
 
 .navigation-search {
@@ -621,7 +642,7 @@ body {
 }
 
 .catalog-filter-label:focus {
-    box-shadow: 0px 0px 0px 3px #81B3D2;
+    box-shadow: 0 0 0 3px #81B3D2;
 }
 
 .filter-label {
@@ -697,13 +718,13 @@ body {
 
 .range-toggle:hover {
     border: 3px solid #83B3D3;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
 }
 
 .range-toggle:active {
     border: 2px solid #83B3D3;
-    box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
     border-radius: 5px;
 }
 
