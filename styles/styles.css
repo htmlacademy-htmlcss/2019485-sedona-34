@@ -695,6 +695,18 @@ body {
     cursor: pointer;
 }
 
+.range-toggle:hover {
+    border: 3px solid #83B3D3;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.range-toggle:active {
+    border: 2px solid #83B3D3;
+    box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+}
+
 .toggle-min {
     top: -8px;
 }
@@ -725,6 +737,23 @@ body {
     text-transform: uppercase;
 }
 
+.button-submit:hover {
+    background: #68A2CA;
+}
+
+.button-submit:active {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.button-submit:focus {
+    background: #68A2CA;
+}
+
+.button-submit:disabled {
+    background: #E5E5E5;
+    color: #FFFFFF;
+}
+
 .button-reset {
     height: 48px;
     border: 0;
@@ -736,6 +765,20 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
+}
+
+.button-reset:hover {
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+
+.button-reset:active {
+    color: #FFFFFF;
+    opacity: 0.3;
+}
+
+.button-reset:focus {
+    box-shadow: 3px #83B3D3;
 }
 
 .catalog-filter-list {
@@ -888,11 +931,14 @@ body {
 .control-input[type="radio"]:checked + .control-radio::before {
     position: absolute;
     content: "";
-    background: url(../images/catalog/svg/radio-round.svg) no-repeat;
-    left: 23%;
-    right: 25%;
-    top: 25%;
-    bottom: 25%;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: #3F5E72;
+    left: 5px;
+    right: 5px;
+    top: 5px;
+    bottom: 5px;
 }
 
 .control:focus .control-mark {
