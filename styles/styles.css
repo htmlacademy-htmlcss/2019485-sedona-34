@@ -1208,9 +1208,19 @@ body {
 }
 
 .pagination-container {
+    position: relative;
     display: flex;
     padding: 0 73px 0 71px;
     margin: 0 0 25px 0;
+}
+
+.pagination-container::before {
+    position: absolute;
+    content: "";
+    width: 1055px;
+    height: 1px;
+    background-color: #E6E6E6;
+    top: -30px
 }
 
 .pagination {
