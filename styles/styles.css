@@ -1372,7 +1372,12 @@ body {
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba(242, 242, 242, 0.8)
+    background: rgba(242, 242, 242, 0.8);
+    z-index: 2;
+}
+
+.modal-container-close {
+    display: none
 }
 
 .modal {
@@ -1380,7 +1385,7 @@ body {
     margin: auto;
     padding: 62px 70px 70px 68px;
     background: #FFFFFF;
-    box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
     border-radius: 30px;
 }
 
@@ -1401,6 +1406,28 @@ body {
 .check-in-label {
     display: flex;
     margin: 0 0 40px 0;
+    position: relative;
+}
+
+.check-in-label:before {
+    position: absolute;
+    content: "Мы не можем отправить вас в прошлое.";
+    left: 155px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    top: 60px;
+    color: #FF5757
+}
+
+.check-in-label:after {
+    position: absolute;
+    content: "";
+    background: url(../images/svg/modal-calendar.svg) no-repeat;
+    width: 15px;
+    height: 15px;
+    top: 18px;
+    right: 20px;
 }
 
 .check-in {
@@ -1408,10 +1435,13 @@ body {
 }
 
 .checkin-input {
+    position: relative;
     width: 420px;
     padding: 15px 19px 14px;
     border: 0;
     background: #F2F2F2;
+    color: #000000;
+    opacity: 0.6;
     border-radius: 4px;
     min-height: 50px;
     box-sizing: border-box;
@@ -1419,6 +1449,27 @@ body {
     font-size: 18px;
     line-height: 21px;
     font-family: inherit;
+}
+
+.checkin-input:hover {
+    background: #E6E6E6;
+    color: #000000;
+    opacity: 0.6
+}
+
+.checkin-input:not(:placeholder-shown) {
+    color: #000000;
+    background: #FFFFFF;
+    outline: 2px solid #000000;
+    opacity: 1;
+    border-radius: 4px;
+}
+
+.checkin-input:focus-visible {
+    background: #E6E6E6;
+    outline: 3px solid #83B3D3;
+    color: #000000;
+    opacity: 0.6
 }
 
 .modal-form-label {
@@ -1431,10 +1482,92 @@ body {
 .check-out-label {
     display: flex;
     margin: 0 0 40px 0;
+    position: relative;
+}
+
+.check-out-label:before {
+    position: absolute;
+    content: "На эти даты есть свободные номера. Пока есть.";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    top: 60px;
+    left: 155px;
+}
+
+.check-out-label:after {
+    position: absolute;
+    content: "";
+    background: url(../images/svg/modal-calendar.svg) no-repeat;
+    width: 15px;
+    height: 15px;
+    top: 18px;
+    right: 20px;
 }
 
 .check-out {
     margin: 0 36px 0 0;
+}
+
+.adults-label {
+    display: flex;
+    position: relative;
+}
+
+.adults-less {
+    height: 50px;
+    width: 40px;
+    position: absolute;
+    left: 155px;
+    border: 0;
+    background: transparent;
+}
+
+.adults-more {
+    position: absolute;
+    width: 40px;
+    height: 50px;
+    left: 247px;
+    border: 0;
+    background: transparent;
+}
+
+.svg-plus {
+    fill: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    bottom: 17px;
+    right: 14px;
+}
+
+.svg-plus:hover {
+    fill: #000000;
+}
+
+.svg-plus:active {
+    fill: rgba(0, 0, 0, 0.2);
+}
+
+.svg-plus:focus-visible {
+    outline: 3px solid #83B3D3;
+}
+
+.svg-minus {
+    fill: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    bottom: 23px;
+    left: 16px;
+}
+
+.svg-minus:hover {
+    fill: #000000;
+}
+
+.svg-minus:active {
+    fill: rgba(0, 0, 0, 0.2);
+}
+
+.svg-minus:focus-visible {
+    outline: 3px solid #83B3D3;
 }
 
 .adults-label-title {
@@ -1443,9 +1576,22 @@ body {
     line-height: 26px;
     margin: 0 64px 0 0;
     font-family: inherit;
+    align-self: center;
 }
 
 .adults-input {
+    width: 133px;
+    min-height: 50px;
+    background: #F2F2F2;
+    border-radius: 4px;
+    border: 0;
+    padding: 15px 60px 14px 60px;
+    margin: 0 56px 0 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.children-input {
     width: 133px;
     min-height: 50px;
     background: #F2F2F2;
@@ -1456,6 +1602,32 @@ body {
     text-align: center;
 }
 
+.children-label-title {
+    margin: 0 43px 0 0;
+    align-self: center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.children-more {
+    position: absolute;
+    width: 40px;
+    height: 50px;
+    right: 0;
+    border: 0;
+    background: transparent;
+}
+
+.children-less {
+    position: absolute;
+    width: 40px;
+    height: 50px;
+    right: 95px;
+    border: 0;
+    background: transparent;
+}
+
 .modal-close-button {
     position: absolute;
     content: "";
@@ -1464,10 +1636,120 @@ body {
     right: 70px;
     width: 53px;
     height: 53px;
-    background: url(../images/svg/modal-close.svg) no-repeat center #F2F2F2;
     cursor: pointer;
     border-radius: 50%;
     border: 0;
+}
+
+.modal-close-icon {
+    fill: #000000;
+    left: 20px;
+    position: absolute;
+    top: 20px;
+}
+
+.modal-close-button:hover + .modal-close-icon {
+    fill: rgba(0, 0, 0, 0.3);
+    background: #E6E6E6;
+}
+
+.modal-close-icon:active {
+    fill: rgba(0, 0, 0, 0.3);
+    background: transparent;
+
+
+}
+
+.modal-close-icon:focus-visible {
+    background: #E6E6E6;
+    outline: 3px solid #83B3D3;
+}
+
+.modal-submit-button {
+    width: 575px;
+    padding: 12px 26px;
+    border: 0;
+    background: #83B3D3;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-transform: uppercase;
+    font-family: inherit;
+    margin: 40px 0 0 0;
+}
+
+.modal-submit-button:hover {
+    background: #68A2CA;
+}
+
+.modal-submit-button:active {
+    background: #68A2CA;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.modal-submit-button:focus-visible {
+    background: #68A2CA;
+    outline: 3px solid #756257;
+}
+
+.children-tooltip {
+    position: absolute;
+    right: 145px;
+    top: 14px;
+}
+
+.tooltip-toggle {
+    border: 0;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+.tooltip-icon {
+    width: 100%;
+    height: 100%;
+    fill: #83B3D3;
+}
+
+.tooltip-icon:hover {
+    fill: #68A2CA;
+}
+
+.tooltip-info {
+    width: 256px;
+    background: #333333;
+    color: #ffffff;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 15px 18px 18px 22px;
+    font-size: 16px;
+    line-height: 21px;
+    position: absolute;
+    top: 160%;
+    right: -116px;
+    box-sizing: border-box;
+    display: none;
+}
+
+.tooltip-info:after {
+    content: '';
+    background-image: url("../images/svg/tooltip-arrow.svg");
+    width: 19px;
+    height: 9px;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tooltip-toggle:hover + .tooltip-info,
+.tooltip-toggle:focus + .tooltip-info {
+    display: block;
 }
 
 /* Modal Styles End */
