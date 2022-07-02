@@ -428,6 +428,7 @@ body {
     font-size: 20px;
     line-height: 36px;
     font-family: inherit;
+    cursor: pointer;
 }
 
 .subscription-button:hover {
@@ -678,6 +679,7 @@ body {
     padding: 13px 20px 14px;
     box-sizing: border-box;
     font-family: inherit;
+    appearance: none;
 }
 
 .input-left {
@@ -756,6 +758,7 @@ body {
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .button-submit:hover {
@@ -786,6 +789,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
+    cursor: pointer;
 }
 
 .button-reset:hover {
@@ -1143,6 +1147,7 @@ body {
     border-radius: 4px;
     border: none;
     font-family: inherit;
+    cursor: pointer;
 }
 
 .hotel-card-favorite-button:hover {
@@ -1289,6 +1294,7 @@ body {
     background-color: #82B3D3;
     color: #FFFFFF;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 .pagination-more:hover {
@@ -1457,7 +1463,7 @@ body {
     opacity: 0.6
 }
 
-.checkin-input:not(:placeholder-shown) {
+.checkin-input:active {
     color: #000000;
     background: #FFFFFF;
     outline: 2px solid #000000;
@@ -1465,7 +1471,7 @@ body {
     border-radius: 4px;
 }
 
-.checkin-input:focus-visible {
+.checkin-input:focus-within {
     background: #E6E6E6;
     outline: 3px solid #83B3D3;
     color: #000000;
@@ -1521,6 +1527,7 @@ body {
     left: 155px;
     border: 0;
     background: transparent;
+    cursor: pointer;
 }
 
 .adults-more {
@@ -1530,6 +1537,7 @@ body {
     left: 247px;
     border: 0;
     background: transparent;
+    cursor: pointer;
 }
 
 .svg-plus {
@@ -1617,6 +1625,7 @@ body {
     right: 0;
     border: 0;
     background: transparent;
+    cursor: pointer;
 }
 
 .children-less {
@@ -1626,6 +1635,7 @@ body {
     right: 95px;
     border: 0;
     background: transparent;
+    cursor: pointer;
 }
 
 .modal-close-button {
@@ -1642,25 +1652,21 @@ body {
 }
 
 .modal-close-icon {
-    fill: #000000;
-    left: 20px;
-    position: absolute;
     top: 20px;
+    position: absolute;
+    right: 20px;
 }
 
-.modal-close-button:hover + .modal-close-icon {
-    fill: rgba(0, 0, 0, 0.3);
+.modal-close-button:hover {
     background: #E6E6E6;
 }
 
-.modal-close-icon:active {
+.modal-close-button:active {
+    background: #E6E6E6;
     fill: rgba(0, 0, 0, 0.3);
-    background: transparent;
-
-
 }
 
-.modal-close-icon:focus-visible {
+.modal-close-button:focus-visible {
     background: #E6E6E6;
     outline: 3px solid #83B3D3;
 }
@@ -1678,6 +1684,7 @@ body {
     text-transform: uppercase;
     font-family: inherit;
     margin: 40px 0 0 0;
+    cursor: pointer;
 }
 
 .modal-submit-button:hover {
