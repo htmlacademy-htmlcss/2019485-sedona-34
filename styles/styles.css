@@ -264,6 +264,7 @@ body {
 
 .advantages-item {
     display: flex;
+    min-height: 384px;
 }
 
 .advantages-number {
@@ -287,7 +288,7 @@ body {
 
 .advantages-cards {
     width: 400px;
-    height: 384px;
+    min-height: 384px;
     display: flex;
     flex-direction: column;
     padding: 0 85px;
@@ -342,7 +343,6 @@ body {
 
 .hotel-search {
     width: 1200px;
-    max-height: 417px;
     padding: 90px 0;
 }
 
@@ -448,6 +448,7 @@ body {
 
 .subscription-form {
     display: flex;
+    flex-wrap: wrap;
     width: 800px;
     margin: 0 auto;
 }
@@ -602,8 +603,9 @@ body {
 }
 
 .filter-container {
-    height: 403px;
+    width: 1200px;
     background: url(../images/catalog/png/mountain-bg.png) no-repeat;
+    background-size: cover;
     padding: 35px 70px 70px 70px;
     box-sizing: border-box;
 }
@@ -748,7 +750,6 @@ body {
 }
 
 .button-submit {
-    height: 48px;
     border: 0;
     background-color: #82B3D3;
     color: #FFFFFF;
@@ -780,7 +781,6 @@ body {
 }
 
 .button-reset {
-    height: 48px;
     border: 0;
     background-color: transparent;
     color: #FFFFFF;
@@ -1044,7 +1044,7 @@ body {
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
-    white-space: nowrap;
+    max-width: 338px;
 }
 
 .hotel-catalog-icon {
@@ -1246,8 +1246,8 @@ body {
     text-decoration: none;
     text-align: center;
     padding: 11px 0;
-    width: 60px;
-    height: 60px;
+    min-width: 60px;
+    min-height: 60px;
     font-weight: 700;
     font-size: 20px;
     line-height: 36px;
@@ -1274,8 +1274,8 @@ body {
     box-sizing: border-box;
     text-decoration: none;
     padding: 12px 24px;
-    width: 60px;
-    height: 60px;
+    min-width: 60px;
+    min-height: 60px;
     color: #000000;
     background-color: #F2F2F2;
     font-weight: 700;
@@ -1289,8 +1289,8 @@ body {
     box-sizing: border-box;
     text-decoration: none;
     padding: 12px 24px;
-    width: 60px;
-    height: 60px;
+    min-width: 60px;
+    min-height: 60px;
     border: 0;
     background-color: #82B3D3;
     color: #FFFFFF;
@@ -1321,7 +1321,7 @@ body {
 
 .select-pagination {
     width: 160px;
-    height: 49px;
+    min-height: 49px;
     background-color: #FFF;
     border: 2px solid #E5E5E5;
     border-radius: 4px;
