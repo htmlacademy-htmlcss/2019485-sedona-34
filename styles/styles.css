@@ -823,6 +823,7 @@ body {
 
 .breadcrumbs-list {
     display: flex;
+    flex-wrap: wrap;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -1049,6 +1050,7 @@ body {
 
 .hotel-catalog-icon {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .hotel-list {
@@ -1231,13 +1233,14 @@ body {
 
 .pagination {
     display: flex;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     list-style-type: none;
 }
 
 .pagination-item:not(:last-child) {
-    margin: 0 8px 0 0;
+    margin: 0 8px 5px 0;
 }
 
 .pagination-link {
