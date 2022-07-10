@@ -159,19 +159,27 @@ body {
     background-color: #756157;
     color: #FFFFFF;
     border-radius: 4px;
+    box-sizing: border-box;
 }
 
 .navigation-button:hover {
     background: #615048;
 }
 
-.navigation-button:focus {
+.navigation-button:focus-visible {
     background: #615048;
+    outline: 0;
 }
 
 .navigation-button:active {
     background: #756157;
     color: rgba(255, 255, 255, 0.3);
+}
+
+.navigation-button:disabled {
+    background: #E5E5E5;
+    color: #FFFFFF;
+    outline: 0;
 }
 
 /* Header styles end */
@@ -382,14 +390,19 @@ body {
     background: #615048;
 }
 
-.hotel-search-link:focus {
+.hotel-search-link:focus-visible {
     background: #615048;
+    outline: 0;
 }
 
 .hotel-search-link:active {
     background: #756157;
     color: rgba(255, 255, 255, 0.3);
+}
 
+.hotel-search-link:disabled {
+    background: #E5E5E5;
+    color: #FFFFFF;
 }
 
 .subscription {
@@ -436,14 +449,19 @@ body {
     background: #68A2CA;
 }
 
-.subscription-button:focus {
+.subscription-button:focus-visible {
     background: #68A2CA;
+    outline: 0;
 }
 
 .subscription-button:active {
     background: #82B3D3;
     color: rgba(255, 255, 255, 0.3);
+}
 
+.subscription-button:disabled {
+    background: #E5E5E5;
+    color: #FFFFFF;
 }
 
 .subscription-form {
@@ -461,6 +479,8 @@ body {
     background: #F2F2F2;
     border-radius: 10px 0 0 10px;
     border: 0;
+    font-size: 18px;
+    line-height: 21px;
 }
 
 /* Main styles end */
@@ -761,6 +781,7 @@ body {
     line-height: 20px;
     text-transform: uppercase;
     cursor: pointer;
+    font-family: inherit;
 }
 
 .button-submit:hover {
@@ -771,8 +792,9 @@ body {
     color: rgba(255, 255, 255, 0.3);
 }
 
-.button-submit:focus {
+.button-submit:focus-visible {
     background: #68A2CA;
+    outline: 0;
 }
 
 .button-submit:disabled {
@@ -803,8 +825,8 @@ body {
     opacity: 0.3;
 }
 
-.button-reset:focus {
-    box-shadow: 3px #83B3D3;
+.button-reset:focus-visible {
+    outline: 3px solid #83B3D3;
 }
 
 .catalog-filter-list {
@@ -901,14 +923,21 @@ body {
 
 .select-control:hover {
     border: 2px solid #68A2CA;
+    outline: 0;
 }
 
 .select-control:active {
     border: 2px solid #3F5E72;
+    outline: 0;
 }
 
-.select-control:focus {
-    border: 2px solid #68A2CA;
+.select-control:focus-visible {
+    outline: 2px solid #68A2CA;
+}
+
+.select-control:disabled {
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .control-mark {
@@ -939,10 +968,9 @@ body {
     background: rgba(255, 255, 255, 0.3);
 }
 
-.control:focus .control-mark {
+.control:focus-visible .control-mark {
     background: rgba(255, 255, 255, 0.6);
-    border: 3px solid #83B3D3;
-    border-radius: 4px;
+    outline: 3px solid #83B3D3;
 }
 
 .control-radio {
@@ -968,11 +996,6 @@ body {
     bottom: 5px;
 }
 
-.control:focus .control-mark {
-    background: #FFFFFF;
-    border: 3px solid #83B3D3;
-}
-
 .display-button {
     display: block;
     margin: 0 8px 0 0;
@@ -992,8 +1015,9 @@ body {
     border: 2px solid #000000;
 }
 
-.button-table:focus {
+.button-table:focus-visible {
     border: 2px solid #68A2CA;
+    outline: 0;
 }
 
 .button-table:active {
@@ -1008,8 +1032,9 @@ body {
     border: 2px solid #000000;
 }
 
-.button-wide:focus {
+.button-wide:focus-visible {
     border: 2px solid #68A2CA;
+    outline: 0;
 }
 
 .button-wide:active {
@@ -1024,8 +1049,9 @@ body {
     border: 2px solid #000000;
 }
 
-.button-list:focus {
+.button-list:focus-visible {
     border: 2px solid #68A2CA;
+    outline: 0;
 }
 
 .button-list:active {
@@ -1050,7 +1076,6 @@ body {
 
 .hotel-catalog-icon {
     display: flex;
-    flex-wrap: wrap;
 }
 
 .hotel-list {
@@ -1128,8 +1153,9 @@ body {
     background: #615048;
 }
 
-.hotel-card-link-button:focus {
+.hotel-card-link-button:focus-visible {
     background: #615048;
+    outline: 0;
 }
 
 .hotel-card-link-button:active {
@@ -1157,8 +1183,9 @@ body {
     background: #68A2CA;
 }
 
-.hotel-card-favorite-button:focus {
+.hotel-card-favorite-button:focus-visible {
     background: #68A2CA;
+    outline: 0;
 }
 
 .hotel-card-favorite-button:active {
@@ -1263,8 +1290,9 @@ body {
     background: #68A2CA;
 }
 
-.pagination-link:focus {
+.pagination-link:focus-visible {
     background: #68A2CA;
+    outline: 0;
 }
 
 .pagination-link:active {
@@ -1305,8 +1333,9 @@ body {
     background: #68A2CA;
 }
 
-.pagination-more:focus {
+.pagination-more:focus-visible {
     background: #68A2CA;
+    outline: 0;
 }
 
 .pagination-more:active {
@@ -1341,14 +1370,21 @@ body {
 
 .select-pagination:hover {
     border: 2px solid #68A2CA;
+    outline: 0;
 }
 
 .select-pagination:active {
     border: 2px solid #3F5E72;
+    outline: 0;
 }
 
-.select-pagination:focus {
-    border: 2px solid #68A2CA;
+.select-pagination:focus-visible {
+    outline: 2px solid #68A2CA;
+}
+
+.select-pagination:disabled {
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .small {
