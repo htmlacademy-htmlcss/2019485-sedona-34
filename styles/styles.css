@@ -68,6 +68,7 @@ body {
     padding: 0;
     list-style-type: none;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -245,7 +246,6 @@ body {
 
 .advantages-block {
     width: 400px;
-    height: 384px;
     padding: 0 85px;
     display: flex;
     justify-content: center;
