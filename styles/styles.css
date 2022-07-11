@@ -968,7 +968,7 @@ body {
     background: rgba(255, 255, 255, 0.3);
 }
 
-.control:focus-visible .control-mark {
+.control-input:focus-within + .control-mark {
     background: rgba(255, 255, 255, 0.6);
     outline: 3px solid #83B3D3;
 }
@@ -994,6 +994,19 @@ body {
     right: 5px;
     top: 5px;
     bottom: 5px;
+}
+
+.control:hover .control-radio {
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.control:active .control-radio {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.control-input:focus-within + .control-radio {
+    background: rgba(255, 255, 255, 0.6);
+    outline: 3px solid #83B3D3;
 }
 
 .display-button {
@@ -1638,6 +1651,9 @@ body {
     margin: 0 56px 0 0;
     box-sizing: border-box;
     text-align: center;
+    font-size: 18px;
+    line-height: 21px;
+    font-family: inherit;
 }
 
 .children-input {
@@ -1649,6 +1665,9 @@ body {
     padding: 15px 60px 14px 60px;
     box-sizing: border-box;
     text-align: center;
+    font-size: 18px;
+    line-height: 21px;
+    font-family: inherit;
 }
 
 .children-label {
@@ -1667,7 +1686,7 @@ body {
     position: absolute;
     width: 40px;
     height: 50px;
-    right: 0;
+    right: 10px;
     border: 0;
     background: transparent;
     cursor: pointer;
