@@ -704,6 +704,8 @@ body {
   box-sizing: border-box;
   font-family: inherit;
   appearance: none;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .input-left {
@@ -1096,6 +1098,10 @@ body {
   max-width: 338px;
 }
 
+.hotel-catalog {
+  margin: 0 0 25px 0;
+}
+
 .hotel-catalog-icon {
   display: flex;
 }
@@ -1268,7 +1274,6 @@ body {
   position: relative;
   display: flex;
   padding: 0 73px 0 71px;
-  margin: 0 0 25px 0;
 }
 
 .pagination-container::before {
@@ -1286,10 +1291,11 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  row-gap: 5px;
 }
 
 .pagination-item:not(:last-child) {
-  margin: 0 8px 5px 0;
+  margin: 0 8px 0 0;
 }
 
 .pagination-link {
@@ -1366,16 +1372,18 @@ body {
 }
 
 .catalog-view {
-  margin-left: auto;
-  margin-right: 51px;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  margin: 0;
+  margin-left: auto;
+  margin-right: 51px;
+  align-self: center;
 }
 
 .select-pagination {
   width: 160px;
-  min-height: 49px;
+  height: 49px;
   background-color: #fff;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
