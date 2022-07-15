@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "pt sans";
-  src: url(/fonts/ptsans-700.woff2) format("woff2");
+  src: url("/fonts/ptsans-700.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -627,6 +627,7 @@ body {
   width: 1200px;
   background: url(../images/catalog/png/mountain-bg.png) no-repeat;
   background-size: cover;
+  background-color: #000000;
   padding: 35px 70px 70px 70px;
   box-sizing: border-box;
 }
@@ -706,6 +707,12 @@ body {
   appearance: none;
   font-size: 18px;
   line-height: 21px;
+}
+
+.range-input:disabled {
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .input-left {
@@ -1084,7 +1091,7 @@ body {
 
 .hotel-title-block {
   display: flex;
-  padding: 50px 70px 60px;
+  padding: 50px 70px 55px;
   align-items: center;
   box-sizing: border-box;
 }
