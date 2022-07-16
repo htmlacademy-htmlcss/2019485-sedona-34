@@ -792,7 +792,7 @@ body {
 .filter-button-wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    padding: 55px 0 0 0;
 }
 
 .button-submit {
